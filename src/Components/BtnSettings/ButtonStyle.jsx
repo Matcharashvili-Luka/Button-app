@@ -11,7 +11,7 @@ import BtnTextSetting from './ButtonStyleElements/BtnTextSetting';
 
 
 function ButtonStyle({ 
-  bgColor, setBgColor, fontSize, setFontSize, fontWeight, setFontWeight, hPadding, sethPadding, vPadding, setvPadding, borderRadius, setBorderRadius, btnText, setBtnText, btnBorder, setBtnBorder, outlineColor, setOutlineColor
+  bgColor, setBgColor, fontSize, setFontSize, fontWeight, setFontWeight, hPadding, sethPadding, vPadding, setvPadding, borderRadius, setBorderRadius, btnText, setBtnText, btnBorder, setBtnBorder, outlineColor, setOutlineColor, enableOrDisable, setEnableOrDisable
 }) {
   return (
     <div className='buttonStyle'>
@@ -63,6 +63,8 @@ function ButtonStyle({
                 setBtnBorder={setBtnBorder}
                 outlineColor={outlineColor}
                 setOutlineColor={setOutlineColor}
+                enableOrDisable={enableOrDisable}
+                setEnableOrDisable={setEnableOrDisable}
               />
             </li>
             <li className='btnBorderRadiusSetting'>

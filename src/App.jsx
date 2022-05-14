@@ -12,8 +12,9 @@ function App() {
   const [vPadding, setvPadding] = useState(0);
   const [borderRadius, setBorderRadius] = useState(0);
   const [btnText, setBtnText] = useState('Text');
-  const [btnBorder, setBtnBorder] = useState(2)
-  const [outlineColor, setOutlineColor] = useState('fff')
+  const [btnBorder, setBtnBorder] = useState(2);
+  const [outlineColor, setOutlineColor] = useState('fff');
+  const [enableOrDisable, setEnableOrDisable] = useState(true);
 
   return (
     <div className="App">
@@ -36,6 +37,8 @@ function App() {
         setBtnBorder={setBtnBorder}
         outlineColor={outlineColor}
         setOutlineColor={setOutlineColor}
+        enableOrDisable={enableOrDisable}
+        setEnableOrDisable={setEnableOrDisable}
       />
       <Button 
         bgColor={bgColor}
@@ -47,6 +50,7 @@ function App() {
         btnText={btnText}
         btnBorder={btnBorder}
         outlineColor={outlineColor}
+        enableOrDisable={enableOrDisable}
       />
 
     </div>

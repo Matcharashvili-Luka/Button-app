@@ -10,4 +10,5 @@
 .App{
     display: flex;
     align-items: center;
+    background-color: rgb(6, 2, 46);
 }

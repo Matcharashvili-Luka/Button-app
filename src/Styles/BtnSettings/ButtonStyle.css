@@ -1,6 +1,6 @@
 .buttonStyle{
-    margin-top: 5rem;
-    max-height: 500px;
+    margin-top: 4rem;
+    max-height: 450px;
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -10,16 +10,18 @@
 }
 
 .buttonStyle .btnStyleElements li{
-    background-color: aqua;
+    background-color: transparent;
     display: flex;
     align-items: center;
     padding: .3rem .5rem;
     font-size: 1.2rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #fff;
+    border-left: 5px solid #fff;
     cursor: pointer;
     overflow: hidden;
     max-height: 2rem;
     flex-direction: column;
+    color: #fff;
 }
 
 .text{
@@ -35,7 +37,7 @@
 }
 
 .btnSetting{
-    padding: 1rem 0rem;
+    padding: 2rem 0rem;
 }
 
 .btnStyleElements i{
@@ -125,18 +127,23 @@
 
 /* border settings */
 
-.borderAdditionalSettings{
+.borderAdditionalSettings .btnSetting{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.borderAdditionalSettings .activateBorder{
-    width: 75.5%;
+.borderAdditionalSettings .activateBorder {
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+}
+
+.borderAdditionalSettings .btnSetting .text{
+    display: flex;
+    padding: 2rem 0rem;
 }
 
 .borderAdditionalSettings .activateBorder label{

@@ -3,7 +3,7 @@ import ButtonStyle from './BtnSettings/ButtonStyle';
 import '../Styles/ButtonStyleBar.css';
 
 function ButtonStyleBar({ 
-  bgColor, setBgColor, fontSize, setFontSize, fontWeight, setFontWeight, hPadding, sethPadding, vPadding, setvPadding, borderRadius, setBorderRadius, btnText, setBtnText, btnBorder, setBtnBorder, outlineColor, setOutlineColor
+  bgColor, setBgColor, fontSize, setFontSize, fontWeight, setFontWeight, hPadding, sethPadding, vPadding, setvPadding, borderRadius, setBorderRadius, btnText, setBtnText, btnBorder, setBtnBorder, outlineColor, setOutlineColor, enableOrDisable, setEnableOrDisable
 }) {
   return (
     <div className='buttonStyleBar'>
@@ -35,6 +35,8 @@ function ButtonStyleBar({
               setBtnBorder={setBtnBorder}
               outlineColor={outlineColor}
               setOutlineColor={setOutlineColor}
+              enableOrDisable={enableOrDisable}
+              setEnableOrDisable={setEnableOrDisable}
             />
         </div>
     </div>
