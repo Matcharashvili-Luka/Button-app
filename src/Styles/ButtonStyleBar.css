@@ -1,0 +1,21 @@
+.buttonStyleBar{
+    background-color: green;
+    width: 300px;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.buttonStyleBar .buttonOptions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonOptions p{
+    font-size: 1.3rem;
+    background-color: aliceblue;
+    padding: .3rem .2rem;
+    cursor: pointer;
+    border-radius: .3rem;
+    width: 130px;
+    text-align: center;
+}

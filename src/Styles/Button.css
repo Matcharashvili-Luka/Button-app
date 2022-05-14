@@ -1,0 +1,9 @@
+.buttonImage{
+    width: 450px ;
+    height: 300px;
+    background-color: blueviolet;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
