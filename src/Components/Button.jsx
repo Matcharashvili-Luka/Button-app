@@ -3,7 +3,7 @@ import '../Styles/Button.css';
 import { HuePicker } from 'react-color';
 
 function Button({ 
-  fontSize, fontWeight, hPadding, vPadding, borderRadius, bgColor, btnText, btnBorder, outlineColor, enableOrDisable 
+  fontSize, fontWeight, hPadding, vPadding, borderRadius, bgColor, btnText, btnBorder, outlineColor, enableOrDisable, fontColor
 }) {
 
   const [mainBG, setMainBG] = useState('#18d9d6')
@@ -16,6 +16,7 @@ function Button({
       <div className='buttonImage'>
         <button 
           style={{ 
+            color: `${fontColor}`,
             fontSize: `${fontSize}px`,
             fontWeight: {fontWeight},
             padding: `${hPadding}px ${vPadding}px`,

@@ -1,0 +1,134 @@
+/* drop-down items */
+
+#btnBg:checked ~ .btnStyleElements .btnBgColorSetting{
+    max-height: 100%;
+}
+#btnBg:checked ~ .btnStyleElements .btnBgColorSetting i{
+    transform: rotate(180deg);
+}
+
+#btnFont:checked ~ .btnStyleElements .btnFontSetting{
+    max-height: 100%;
+}
+#btnFont:checked ~ .btnStyleElements .btnFontSetting i{
+    transform: rotate(180deg);
+}
+
+#btnFontSize:checked ~ .btnStyleElements .btnFontSizeSetting{
+    max-height: 100%;
+}
+#btnFontSize:checked ~ .btnStyleElements .btnFontSizeSetting i{
+    transform: rotate(180deg);
+}
+
+#btnFontWeight:checked ~ .btnStyleElements .btnFontWeight{
+    max-height: 100%;
+}
+#btnFontWeight:checked ~ .btnStyleElements .btnFontWeight i{
+    transform: rotate(180deg);
+}
+
+#btnHPadd:checked ~ .btnStyleElements .btnHPaddSetting{
+    max-height: 100%;
+}
+#btnHPadd:checked ~ .btnStyleElements .btnHPaddSetting i{
+    transform: rotate(180deg);
+}
+
+#btnVPadd:checked ~ .btnStyleElements .btnVPaddSetting{
+    max-height: 100%;
+}
+#btnVPadd:checked ~ .btnStyleElements .btnVPaddSetting i{
+    transform: rotate(180deg);
+}
+
+#btnBorder:checked ~ .btnStyleElements .btnBorderSetting{
+    max-height: 100%;
+}
+#btnBorder:checked ~ .btnStyleElements .btnBorderSetting i{
+    transform: rotate(180deg);
+}
+
+#btnBorderRadius:checked ~ .btnStyleElements .btnBorderRadiusSetting{
+    max-height: 100%;
+}
+#btnBorderRadius:checked ~ .btnStyleElements .btnBorderRadiusSetting i{
+    transform: rotate(180deg);
+}
+
+#btnText:checked ~ .btnStyleElements .btnTextSetting{
+    max-height: 100%;
+}
+#btnText:checked ~ .btnStyleElements .btnTextSetting i{
+    transform: rotate(180deg);
+}
+
+#btnFontColor:checked ~ .btnStyleElements .btnFontColor{
+    max-height: 100%;
+}
+#btnFontColor:checked ~ .btnStyleElements .btnFontColor i{
+    transform: rotate(180deg);
+}
+
+#btnTransition:checked ~ .btnStyleElements .btnTransitionSetting{
+    max-height: 100%;
+}
+#btnTransition:checked ~ .btnStyleElements .btnTransitionSetting i{
+    transform: rotate(180deg);
+}
+
+/* drop-down items */
+
+#btnBgHover:checked ~ .btnStyleElementsHover .btnBgColorSettingHover{
+    max-height: 100%;
+}
+#btnBgHover:checked ~ .btnStyleElementsHover .btnBgColorSettingHover i{
+    transform: rotate(180deg);
+}
+
+#btnFontSizeHover:checked ~ .btnStyleElementsHover .btnFontSizeSettingHover{
+    max-height: 100%;
+}
+#btnFontSizeHover:checked ~ .btnStyleElementsHover .btnFontSizeSettingHover i{
+    transform: rotate(180deg);
+}
+
+#btnHPaddHover:checked ~ .btnStyleElementsHover .btnHPaddSettingHover{
+    max-height: 100%;
+}
+#btnHPaddHover:checked ~ .btnStyleElementsHover .btnHPaddSettingHover i{
+    transform: rotate(180deg);
+}
+
+#btnVPaddHover:checked ~ .btnStyleElementsHover .btnVPaddSettingHover{
+    max-height: 100%;
+}
+#btnVPaddHover:checked ~ .btnStyleElementsHover .btnVPaddSettingHover i{
+    transform: rotate(180deg);
+}
+
+#btnBorderHover:checked ~ .btnStyleElementsHover .btnBorderSettingHover{
+    max-height: 100%;
+}
+#btnBorderHover:checked ~ .btnStyleElementsHover .btnBorderSettingHover i{
+    transform: rotate(180deg);
+}
+
+#btnBorderRadiusHover:checked ~ .btnStyleElementsHover .btnBorderRadiusSettingHover{
+    max-height: 100%;
+}
+#btnBorderRadiusHover:checked ~ .btnStyleElementsHover .btnBorderRadiusSettingHover i{
+    transform: rotate(180deg);
+}
+
+#btnFontColorHover:checked ~ .btnStyleElementsHover .btnFontColorHover{
+    max-height: 100%;
+}
+#btnFontColorHover:checked ~ .btnStyleElementsHover .btnFontColorHover i{
+    transform: rotate(180deg);
+}
+
+
+
+
+

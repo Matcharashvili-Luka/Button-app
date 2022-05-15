@@ -1,0 +1,36 @@
+.codeContainer{
+    background-color: rgb(3, 11, 37);
+    width: 320px;
+    height: 100vh;
+    padding: 3rem 1rem;
+}
+
+.codeContainerHeader p{
+    width: 100%;
+    background-color: aliceblue;
+    font-size: 1.3rem;
+    padding: .3rem .2rem;
+    border-radius: .3rem;
+    text-align: center; 
+}
+
+.codeContainer .codeHeader{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #fff;
+}
+
+.cssCode{
+    color: #fff;
+    margin-top: 3rem;
+    max-height: 600px;
+    overflow: hidden;
+    overflow-y: scroll;   
+}
+
+.cssCode::-webkit-scrollbar {
+    display: none;
+}
+
+.actualCode{
+    margin-top: 1rem;
+}

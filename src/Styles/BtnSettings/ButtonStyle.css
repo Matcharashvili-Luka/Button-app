@@ -1,15 +1,9 @@
 .buttonStyle{
-    margin-top: 4rem;
-    max-height: 450px;
-    overflow: hidden;
-    overflow-y: scroll;
+    margin-top: 3rem;
 }
 
-.buttonStyle::-webkit-scrollbar {
-  display: none;
-}
-
-.buttonStyle .btnStyleElements li{
+.buttonStyle .btnStyleElements li,
+.buttonHover .btnStyleElementsHover li{
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -40,73 +34,9 @@
     padding: 2rem 0rem;
 }
 
-.btnStyleElements i{
+.btnStyleElements i,
+.btnStyleElementsHover i{
     transition: .2s;
-}
-
-/* drop-down items */
-
-#btnBg:checked ~ .btnStyleElements .btnBgColorSetting{
-    max-height: 100%;
-}
-#btnBg:checked ~ .btnStyleElements .btnBgColorSetting i{
-    transform: rotate(180deg);
-}
-
-#btnFont:checked ~ .btnStyleElements .btnFontSetting{
-    max-height: 100%;
-}
-#btnFont:checked ~ .btnStyleElements .btnFontSetting i{
-    transform: rotate(180deg);
-}
-
-#btnFontSize:checked ~ .btnStyleElements .btnFontSizeSetting{
-    max-height: 100%;
-}
-#btnFontSize:checked ~ .btnStyleElements .btnFontSizeSetting i{
-    transform: rotate(180deg);
-}
-
-#btnFontWeight:checked ~ .btnStyleElements .btnFontWeight{
-    max-height: 100%;
-}
-#btnFontWeight:checked ~ .btnStyleElements .btnFontWeight i{
-    transform: rotate(180deg);
-}
-
-#btnHPadd:checked ~ .btnStyleElements .btnHPaddSetting{
-    max-height: 100%;
-}
-#btnHPadd:checked ~ .btnStyleElements .btnHPaddSetting i{
-    transform: rotate(180deg);
-}
-
-#btnVPadd:checked ~ .btnStyleElements .btnVPaddSetting{
-    max-height: 100%;
-}
-#btnVPadd:checked ~ .btnStyleElements .btnVPaddSetting i{
-    transform: rotate(180deg);
-}
-
-#btnBorder:checked ~ .btnStyleElements .btnBorderSetting{
-    max-height: 100%;
-}
-#btnBorder:checked ~ .btnStyleElements .btnBorderSetting i{
-    transform: rotate(180deg);
-}
-
-#btnBorderRadius:checked ~ .btnStyleElements .btnBorderRadiusSetting{
-    max-height: 100%;
-}
-#btnBorderRadius:checked ~ .btnStyleElements .btnBorderRadiusSetting i{
-    transform: rotate(180deg);
-}
-
-#btnText:checked ~ .btnStyleElements .btnTextSetting{
-    max-height: 100%;
-}
-#btnText:checked ~ .btnStyleElements .btnTextSetting i{
-    transform: rotate(180deg);
 }
 
 .activetionBTN{

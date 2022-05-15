@@ -1,13 +1,16 @@
 .buttonImage{
-    width: 500px ;
-    height: 400px;
+    width: 400px ;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
+.buttonImage button{
+    cursor: pointer;
+}
+
 .buttonDemo{
-    margin-left: 5rem;
     border-radius: 10px;
     outline: 2px solid #fff; 
 }
