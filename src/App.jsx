@@ -10,7 +10,6 @@ function App() {
   // for button style
   const [bgColor, setBgColor] = useState('#fff');
   const [fontSize, setFontSize] = useState(16);
-  const [fontWeight, setFontWeight] = useState(400);
   const [fontColor, setFontColor] = useState('#000')
   const [hPadding, sethPadding] = useState(0);
   const [vPadding, setvPadding] = useState(0);
@@ -22,14 +21,14 @@ function App() {
   const [enableOrDisable, setEnableOrDisable] = useState(true);
 
   // for button hover
-  const [bgColorHover, setBgColorHover] = useState('#fff');
-  const [fontSizeHover, setFontSizeHover] = useState(16);
-  const [fontColorHover, setFontColorHover] = useState('#000')
-  const [hPaddingHover, sethPaddingHover] = useState(0);
-  const [vPaddingHover, setvPaddingHover] = useState(0);
-  const [btnBorderHover, setBtnBorderHover] = useState(2);
-  const [outlineColorHover, setOutlineColorHover] = useState('#fff');
-  const [borderRadiusHover, setBorderRadiusHover] = useState(0);
+  const [bgColorHover, setBgColorHover] = useState(bgColor);
+  const [fontSizeHover, setFontSizeHover] = useState(fontSize);
+  const [fontColorHover, setFontColorHover] = useState(fontColor)
+  const [hPaddingHover, sethPaddingHover] = useState(hPadding);
+  const [vPaddingHover, setvPaddingHover] = useState(vPadding);
+  const [btnBorderHover, setBtnBorderHover] = useState(btnBorder);
+  const [outlineColorHover, setOutlineColorHover] = useState(outlineColor);
+  const [borderRadiusHover, setBorderRadiusHover] = useState(borderRadius);
 
   return (
     <div className="App">
@@ -88,11 +87,22 @@ function App() {
         outlineColor={outlineColor}
         fontColor={fontColor}
         enableOrDisable={enableOrDisable}
+        transition={transition}
+
+        //for btn hover
+        bgColorHover={bgColorHover}
+        fontSizeHover={fontSizeHover}
+        hPaddingHover={hPaddingHover}
+        vPaddingHover={vPaddingHover}
+        borderRadiusHover={borderRadiusHover}
+        btnBorderHover={btnBorderHover}
+        outlineColorHover={outlineColorHover}
+        fontColorHover={fontColorHover}
       />
       <Code 
+        //for btn style
         bgColor={bgColor}
         fontSize={fontSize}
-        fontWeight={fontWeight}
         hPadding={hPadding}
         vPadding={vPadding}
         borderRadius={borderRadius}
@@ -101,6 +111,16 @@ function App() {
         fontColor={fontColor}
         transition={transition}
         enableOrDisable={enableOrDisable}
+
+        //for btn hover
+        bgColorHover={bgColorHover}
+        fontSizeHover={fontSizeHover}
+        hPaddingHover={hPaddingHover}
+        vPaddingHover={vPaddingHover}
+        borderRadiusHover={borderRadiusHover}
+        btnBorderHover={btnBorderHover}
+        outlineColorHover={outlineColorHover}
+        fontColorHover={fontColorHover}
       />
     </div>
   );

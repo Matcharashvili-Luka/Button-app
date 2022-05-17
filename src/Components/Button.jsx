@@ -2,11 +2,17 @@ import React, { useState } from 'react';
 import '../Styles/Button.css';
 import { HuePicker } from 'react-color';
 
+
 function Button({ 
-  fontSize, fontWeight, hPadding, vPadding, borderRadius, bgColor, btnText, btnBorder, outlineColor, enableOrDisable, fontColor
+   //for btn style
+  fontSize, hPadding, vPadding, borderRadius, bgColor, btnText, btnBorder, outlineColor, enableOrDisable, fontColor, transition,
+
+   //for btn hover
+  bgColorHover, fontSizeHover, hPaddingHover, vPaddingHover, borderRadiusHover, btnBorderHover, outlineColorHover, fontColorHover,
 }) {
 
   const [mainBG, setMainBG] = useState('#18d9d6')
+  const [buttonHovered, setButtonHovered] = useState(false)
 
   return (
     <div className='buttonDemo' style={{ backgroundColor: `${mainBG}`}}>
@@ -15,15 +21,30 @@ function Button({
       </div>
       <div className='buttonImage'>
         <button 
-          style={{ 
-            color: `${fontColor}`,
-            fontSize: `${fontSize}px`,
-            fontWeight: {fontWeight},
-            padding: `${hPadding}px ${vPadding}px`,
-            borderRadius: `${borderRadius}px`,
-            backgroundColor: `${bgColor}`,
-            border: enableOrDisable === false ? `${btnBorder}px solid ${outlineColor}` : 'none',
-            }}
+          onMouseEnter={() => setButtonHovered(true)} 
+          onMouseLeave={() => setButtonHovered(false)}
+          transition={2000}
+          style={
+            buttonHovered === false ? 
+            { 
+              color: `${fontColor}`,
+              fontSize: `${fontSize}px`,
+              padding: `${hPadding}px ${vPadding}px`,
+              borderRadius: `${borderRadius}px`,
+              backgroundColor: `${bgColor}`,
+              border: enableOrDisable === false ? `${btnBorder}px solid ${outlineColor}` : 'none',
+              transition: `${transition}s`,
+            } : 
+            {
+              color: `${fontColorHover === `#000` ? `${fontColor}` : `${fontColorHover}`}`,
+              fontSize: `${fontSizeHover === 16 ? `${fontSize}` : `${fontSizeHover}`}px`,
+              padding: `${hPaddingHover === 0 ? `${hPadding}` : `${hPaddingHover}`}px ${vPaddingHover === 0 ? `${vPadding}` : `${vPaddingHover}`}px`,
+              borderRadius: `${borderRadiusHover === 0 ? `${borderRadius}` : `${borderRadiusHover}`}px`,
+              backgroundColor: `${bgColorHover === `#fff` ? `${bgColor}` : `${bgColorHover}`}`,
+              border: enableOrDisable === false ? `${btnBorderHover === 2 ? `${btnBorder}` : `${btnBorderHover}`}px solid ${outlineColor === `#fff` ? `${outlineColor}` : `${outlineColorHover}`}` : 'none',
+              transition: `${transition}s`,
+            }
+            }
           >
           {btnText}
         </button>

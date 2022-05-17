@@ -1,7 +1,7 @@
 import React from 'react';
 import { SketchPicker } from 'react-color';
 
-function BtnColorSettingHover({ bgColorHover, setBgColorHover}) {
+function BtnColorSettingHover({ bgColorHover, setBgColorHover, }) {
   return (
     <div>
         <label className='text' htmlFor='btnBgHover'>
