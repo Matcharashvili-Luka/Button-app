@@ -7,10 +7,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.MainPage,
 .App{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     background-color: rgb(6, 2, 46);
+    overflow: hidden;
 }
-

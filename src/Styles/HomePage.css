@@ -1,0 +1,39 @@
+.homePage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.homePage .homePageText{
+    text-align: center;
+}
+.homePage .homePageText .homePageP{
+    font-size: 1.1rem;
+    padding: .2rem;
+}
+
+.homePage .headerOfHomePage{
+    font-size: 3rem;
+    padding: .5rem;
+}
+
+.homePage .homePageButton{
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    margin-top: 4rem;
+    outline: none;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: background-color .5s;
+    color: blue;
+    font-weight: 900;
+}
+
+.homePage .homePageButton:hover{
+    background-color: rgb(182, 180, 180);
+}
