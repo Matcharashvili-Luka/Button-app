@@ -31,7 +31,7 @@ function App() {
   const [borderRadiusHover, setBorderRadiusHover] = useState(borderRadius);
 
   return (
-    <div className="App">
+    <div className="mainPage">
       <ButtonStyleBar 
         //for btn style
         bgColor={bgColor}

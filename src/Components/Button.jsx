@@ -41,7 +41,7 @@ function Button({
               padding: `${hPaddingHover === 0 ? `${hPadding}` : `${hPaddingHover}`}px ${vPaddingHover === 0 ? `${vPadding}` : `${vPaddingHover}`}px`,
               borderRadius: `${borderRadiusHover === 0 ? `${borderRadius}` : `${borderRadiusHover}`}px`,
               backgroundColor: `${bgColorHover === `#fff` ? `${bgColor}` : `${bgColorHover}`}`,
-              border: enableOrDisable === false ? `${btnBorderHover === 2 ? `${btnBorder}` : `${btnBorderHover}`}px solid ${outlineColor === `#fff` ? `${outlineColor}` : `${outlineColorHover}`}` : 'none',
+              border: enableOrDisable === false ? `${btnBorderHover === 2 ? `${btnBorder}` : `${btnBorderHover}`}px solid ${outlineColorHover === '#fff' ? `${outlineColor}` : `${outlineColorHover}`}` : 'none',
               transition: `${transition}s`,
             }
             }

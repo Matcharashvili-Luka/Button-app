@@ -55,6 +55,16 @@
     font-size: 1rem;
 }
 
+.buttonTextSettings .btnSetting input{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid green;
+    padding: .1rem;
+}
+
 /* border settings */
 
 .borderAdditionalSettings .btnSetting{

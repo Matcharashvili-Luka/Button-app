@@ -37,3 +37,9 @@
 .homePage .homePageButton:hover{
     background-color: rgb(182, 180, 180);
 }
+
+@media screen and (max-width: 1150px){
+    .homePage{
+        display: none;
+    }
+}

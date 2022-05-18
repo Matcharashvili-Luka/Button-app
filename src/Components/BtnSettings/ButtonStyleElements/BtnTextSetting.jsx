@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import '../../../Styles/BtnSettings/ButtonStyle.css'
 
 function BtnTextSetting({ btnText, setBtnText}) {
   return (
-    <div>
+    <div className='buttonTextSettings'>
         <label className='text' htmlFor='btnText'>
             <p>Button Text</p>
             <i class="fa-solid fa-angle-down"></i>

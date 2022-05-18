@@ -7,7 +7,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.MainPage,
+.mainPage,
 .App{
     display: flex;
     align-items: center;
@@ -15,4 +15,61 @@
     width: 100%;
     background-color: rgb(6, 2, 46);
     overflow: hidden;
+}
+
+.warning{
+    display: none;
+}
+
+@media screen and (max-width: 1150px) {
+    .warning{
+        display: block;
+        width: 420px;
+        height: 200px;
+        background-color: rgb(1, 24, 156);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        outline: 3px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        text-align: center;
+        padding: 2rem .5rem;
+    }
+    .warning h1{
+        color: yellow;
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+    .warning p{
+        font-size: 1.3rem;
+        padding: .3rem;
+        color: #fff;
+    }
+    .fa-ban{
+        color: red;
+        margin-left: .5rem;
+    }
+    .warning div{
+        padding-top: .5rem;
+    }
+    .mainPage{
+        display: none;
+    }
+    .App{
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .warning{
+        width: 90%;
+    }
+    .warning h1{
+        font-size: 2.3rem;
+    }
+    .warning p{
+        font-size: 1.1rem;
+        padding: .1rem;
+    }
 }
